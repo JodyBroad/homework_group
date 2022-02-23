@@ -1,0 +1,2 @@
+cheese = ['Cheddar', ['Camembert', 'Brie'], 'Stilton']
+print(cheese[1][0]) #the number [1] accesses the second or inner list of [camembert, brie], and then the number [0] refers to the first item in that list which then gives an output of camembert.
