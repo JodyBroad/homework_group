@@ -62,16 +62,15 @@ def who_wins(human_action, computer_action):
 
 
 # can't get this to work here because it needs to import the variables from the other file
-# def scoreboard():
-#     current_time = datetime.datetime.now()
-#     dt_string = current_time.strftime("%d/%m/%Y %H:%M:%S")
-#     score_file = open("scores.txt", 'a')
-#     # from homework_week_six.jody_RPS import player_name, human_victories, computer_victories
-#     score_file.write(dt_string + "     " + f"{str(player_name) : <35}" + "human victories: " + str(human_victories) +
-#                      "     " + "computer victories: " + str(computer_victories))
-#     score_file.write("\n ------------------------------------------------------------------------------------------"
-#                      "----------------------------- \n")
-#     score_file.close()
+def scoreboard(player_name, human_victories, computer_victories):
+    current_time = datetime.datetime.now()
+    dt_string = current_time.strftime("%d/%m/%Y %H:%M:%S")
+    score_file = open("scores.txt", 'a')
+    score_file.write(dt_string + "     " + f"{str(player_name) : <35}" + "human victories: " + str(human_victories) +
+                     "     " + "computer victories: " + str(computer_victories))
+    score_file.write("\n ------------------------------------------------------------------------------------------"
+                     "----------------------------- \n")
+    score_file.close()
 
 # def main():
 # I don't really have anything to put in here, but would put any executable code in here
@@ -80,3 +79,7 @@ def who_wins(human_action, computer_action):
 # run this code
 # if __name__ == "__main__":
 #   main()
+
+
+def print_line():
+    print("*" * 100)
