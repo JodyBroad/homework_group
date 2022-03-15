@@ -27,13 +27,13 @@ class Employee(Person):
     def set_job_title(self, job_title):
         self.__job_title = job_title
 
-    # getter - department
-    # def get_department(self):
-    #     return self.__department
-    #
-    # # setter - department
-    # def set_department(self, department):
-    #     self.__department = department
+    #getter - department
+    def get_department(self):
+        return self.__department
+
+    # setter - department
+    def set_department(self, department):
+        self.__department = department
 
     # getter - salary
     def get_salary(self):
